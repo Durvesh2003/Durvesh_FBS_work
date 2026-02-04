@@ -7,3 +7,4 @@ if (Str1 == 'a' or Str1 == 'e' or Str1 == 'i' or Str1 == 'o' or Str1 == 'u' or S
 else :
     print("It is consonant")
 
+
