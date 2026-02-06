@@ -32,7 +32,7 @@ else :
 gender = input("Enter the Gender (F/M) :")
 age = int(input("Enter the Age :"))
 
-# if (gender == 'F'):\
+# if (gender == 'F'):
 if gender in ['f','F','Female','female']:
     if (age > 17):
         print("Eligible for marraige")
