@@ -2,7 +2,7 @@
 
 
 
-# d. S = a + a2 / 2 + a3 / 3 + ...... + a10 / 10
+
 # e. x - x2/3 + x3/5 - x4/7 + .... to n terms
 
 
@@ -44,8 +44,9 @@ print(f"Final answer  : {sum}")
 # c. Find the sum of a geometric series from 1 to n where the common ratio is 2.
 
 # Output should be for series of first n i.e 5 
-                                    #    0/p = 1 2 4 8 16
+                                    #    0/p = 1+2+4+8+16 = 31
 
+'''
 n = int(input("Enter number of terms : "))
 
 sum = 0
@@ -56,5 +57,14 @@ for i in range(n):
     term *= 2   # multiply by common ratio (2)
 
 print("Sum of geometric series is :", sum)
+'''
 
-    
+# d. S = a + a2 / 2 + a3 / 3 + ...... + a10 / 10 
+
+Base = int(input("Enter the base value i.e a : "))
+n = int(input("Enter the number of terms or power : "))
+
+sum = 0
+for i in range (1, n + 1):
+    sum += (Base**i)/i
+print(f"Sum is : {sum}")
