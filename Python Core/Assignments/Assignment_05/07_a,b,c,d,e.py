@@ -1,11 +1,6 @@
 # 7. Write a program to solve the following series :
 
 
-
-
-# e. x - x2/3 + x3/5 - x4/7 + .... to n terms
-
-
 # a. 1! + 2! + 3! + 4! + .....n!
 '''
 n = int(input("Enter for first n numbers : "))
@@ -67,4 +62,19 @@ n = int(input("Enter the number of terms or power : "))
 sum = 0
 for i in range (1, n + 1):
     sum += (Base**i)/i
+print(f"Sum is : {sum}")
+
+
+
+# e. x - x2/3 + x3/5 - x4/7 + .... to n terms
+
+x = int(input("Enter the base value i.e x : "))
+n = int(input("Enter the number of terms o: "))
+
+sum = 0
+for i in range (1, n + 1):
+    if i%2 != 0:
+        sum += (x**i)/(i*2 - 1)
+    else :
+        sum -= (x**i)/(i*2 - 1)
 print(f"Sum is : {sum}")
