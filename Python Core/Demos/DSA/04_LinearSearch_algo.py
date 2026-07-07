@@ -14,3 +14,4 @@ if res != -1:
     print(f'{search_ele} is present at index {res}')
 else :
     print(f'{search_ele} is not present ')
+
