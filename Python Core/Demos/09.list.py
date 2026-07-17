@@ -35,5 +35,3 @@ print(li)
 
 li.remove(1)
 print(li)
-
-li.pop([1])
